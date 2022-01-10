@@ -8,7 +8,7 @@ body{
     box-sizing: border-box;
     font-family: 'Raleway', sans-serif;
     font-weight: 400;
-    background-color: #222;
+    background-color: #121212;
 }
 .container{
     max-width: 1200px;
@@ -36,4 +36,248 @@ body{
 }
 .hero-right img{
     border: 4px solid #22bedd;
+}
+.margin{
+margin-top: 20px;
+margin-bottom: 20px;
+}
+.hero-heading{
+    font-size: 60px;
+    color: #22bedd;
+    position: relative;
+    white-space: nowrap;
+    color: #fff;
+    
+   
+}
+.hero-heading::before{
+    content: 'Programming hero';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    color: #22bedd;
+    animation: typing 3s linear infinite;   
+    
+}
+@keyframes typing {
+    0% {
+        content: 'P|';
+    }
+
+    4% {
+        content: 'Pr|';
+    }
+
+    8% {
+        content: 'Pro|';
+    }
+
+    12% {
+        content: 'Prog|';
+    }
+
+    16% {
+        content: 'Progr|';
+    }
+
+    20% {
+        content: 'Progra|';
+    }
+
+    24% {
+        content: 'Program|';
+    }
+
+    28% {
+        content: 'Programm|';
+    }
+
+    32% {
+        content: 'Programmi|';
+    }
+
+    36% {
+        content: 'Programmin|';
+    }
+
+    40% {
+        content: 'Programming|';
+    }
+
+    44% {
+        content: 'Programming |';
+    }
+
+    48% {
+        content: 'Programming h|';
+    }
+
+    52% {
+        content: 'Programming he|';
+    }
+
+    56% {
+        content: 'Programming her|';
+    }
+
+    60% {
+        content: 'Programming hero|';
+    }
+
+    64%,
+    83% {
+        content: 'Programming hero|';
+    }
+
+    84% {
+        content: 'Programming her|';
+    }
+
+    85% {
+        content: 'Programming he|';
+    }
+
+    86% {
+        content: 'Programming h|';
+    }
+
+    87% {
+        content: 'Programming |';
+    }
+
+    88% {
+        content: 'Programming|';
+    }
+
+    89% {
+        content: 'Programmin|';
+    }
+
+    90% {
+        content: 'Programmi|';
+    }
+
+    91% {
+        content: 'Programm|';
+    }
+
+    92% {
+        content: 'Program|';
+    }
+
+    93% {
+        content: 'Progra|';
+    }
+
+    94% {
+        content: 'Progr|';
+    }
+
+    95% {
+        content: 'Prog|';
+    }
+
+    96% {
+        content: 'Pro|';
+    }
+
+    97% {
+        content: 'Pr|';
+    }
+
+    98% {
+        content: 'P|';
+    }
+
+    99% {
+        content: '|';
+    }
+
+    100% {
+        content: '|';
+    }
+}
+.hero-button{
+    height: 50px;
+    width: 150px;
+    font-size: 20px;
+    color: #fff;
+    background-color: #22bedd;
+    border: 3px solid #22bedd;
+    transition: all .5s;
+    cursor: pointer;
+}
+.hero-button:hover{
+    background-color: transparent;
+}
+.hero-text{
+    
+    line-height: 2;
+}
+/* ------animation------- */
+.img-section{
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+.photo{
+    height: 250px;
+    width: 250px;
+    position: relative;
+    overflow: hidden;
+    
+}
+.photo img{
+    
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+   
+}
+.photo img:hover .photo{
+    display: block;
+}
+.border{
+    position: absolute;
+    background-color: white;
+    transition: .7s ease-in-out;
+}
+.border.top, .border.bottom{
+    height: 5px;
+    width: 240px;
+}
+.border.left, .border.right{
+    height: 240px;
+    width: 5px;
+}
+.border.top{
+    top:5px;
+    right: 100%;
+
+}
+.border.right{
+    right: 5px;
+    bottom: 100%;
+}
+.border.bottom{
+    bottom: 5px;
+    left: 100%;
+}
+.border.left{
+    left: 5px;
+    top: 100%;
+}
+.photo:hover .border.top{
+    right: 5px;
+}
+.photo:hover .border.bottom{
+    left: 5px;
+}
+.photo:hover .border.left{
+    top: 5px;
+}
+.photo:hover .border.right{
+    bottom: 5px;
 }
